@@ -39,7 +39,7 @@
                 </div>
                 <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                     <dt class="text-sm font-medium text-gray-500">
-                        State Of Origin
+                        State Of Origin 
                     </dt>
                     <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
                         {{$user->state_of_origin}}
@@ -51,7 +51,7 @@
                     </dt>
                     <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
 
-                        @foreach ($user->safelocks as $safe)
+                        @foreach ($user->safelocks()->get() as $safe)
 
                         <div class="intro-y col-span-12 md:col-span-6 xl:col-span-4 box border-b border-gray-200">
                             <div class="flex items-center  dark:border-dark-5 px-5 py-4">
@@ -93,7 +93,7 @@
                     </dt>
                     <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
 
-                        @foreach ($user->insurances as $insurance)
+                        @foreach ($user->insurances()->get() as $insurance)
 
                         <div class="intro-y col-span-12 md:col-span-6 xl:col-span-4 box border-b border-gray-200">
                             <div class="flex items-center  dark:border-dark-5 px-5 py-4">
