@@ -39,7 +39,7 @@
                 </div>
                 <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                     <dt class="text-sm font-medium text-gray-500">
-                        State Of Origin 
+                        State Of Origin
                     </dt>
                     <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
                         {{$user->state_of_origin}}
@@ -50,7 +50,7 @@
                         Safe Locks
                     </dt>
                     <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-@if($user->safelocks!=null)
+                        @if($user->safelocks!=null)
                         @foreach ($user->safelocks as $safe)
 
                         <div class="intro-y col-span-12 md:col-span-6 xl:col-span-4 box border-b border-gray-200">
@@ -58,7 +58,7 @@
 
                                 <div class="ml-3 mr-auto">
                                     <a href="" class="font-medium">Savings ({{$safe->per}}): {{$safe->savings}}</a>
-                                    
+
                                     <div class="text-gray-700 dark:text-gray-600 mt-2 ">
                                         <a href="" class="block font-medium mt-5">Details: </a>
 
@@ -81,7 +81,7 @@
 
                         @endforeach
 
-@endif
+                        @endif
 
                     </dd>
 
@@ -94,7 +94,7 @@
                     <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
 
 
-@if($user->insurances!=null)
+                        @if($user->insurances!=null)
                         @foreach ($user->insurances as $insurance)
 
                         <div class="intro-y col-span-12 md:col-span-6 xl:col-span-4 box border-b border-gray-200">
@@ -152,7 +152,7 @@
                         </div>
 
                         @endforeach
-@endif
+                        @endif
 
 
                     </dd>
