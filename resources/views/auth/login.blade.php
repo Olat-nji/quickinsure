@@ -1,5 +1,5 @@
 <x-guest-layout page="Login">
-    <div class="px-2 mt-2 w-full">
+    <div class="px-1 mt-2 w-full">
         <!-- FORM SECTION-->
 
         <form class="md:px-20 lg:px-48 mt-4 md:grid md:grid-cols-2 md:gap-x-14 w-80 md:w-full mx-auto" method="POST" action="{{ route('login') }}">
