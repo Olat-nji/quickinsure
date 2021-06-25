@@ -50,8 +50,8 @@
                         Safe Locks
                     </dt>
                     <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-
-                        @foreach ($user->safelocks()->get() as $safe)
+@if($user->safelocks!=null)
+                        @foreach ($user->safelocks as $safe)
 
                         <div class="intro-y col-span-12 md:col-span-6 xl:col-span-4 box border-b border-gray-200">
                             <div class="flex items-center  dark:border-dark-5 px-5 py-4">
@@ -81,7 +81,7 @@
 
                         @endforeach
 
-
+@endif
 
                     </dd>
 
@@ -93,7 +93,9 @@
                     </dt>
                     <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
 
-                        @foreach ($user->insurances()->get() as $insurance)
+
+@if($user->insurances!=null)
+                        @foreach ($user->insurances as $insurance)
 
                         <div class="intro-y col-span-12 md:col-span-6 xl:col-span-4 box border-b border-gray-200">
                             <div class="flex items-center  dark:border-dark-5 px-5 py-4">
@@ -150,7 +152,7 @@
                         </div>
 
                         @endforeach
-
+@endif
 
 
                     </dd>
