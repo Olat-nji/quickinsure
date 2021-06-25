@@ -1,0 +1,17 @@
+.dashboardside:hover{
+    width:144px;
+    border:2px solid crimson;
+}
+.addsafe{
+    left:15%;
+    width: 70%;
+    box-shadow: 0 0 4px gray;
+}
+.forms{
+    width:70%;
+    left:15%;
+    box-shadow:0 0 3px gray;
+}
+.forgot{
+    left:50%;
+}
